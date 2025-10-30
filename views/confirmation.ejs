@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Order Form</title>
+    <link rel="icon" href="images/icecream.png" />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Thank you for your order</h1>
+      <h2 class="headStyle">Your ice cream order has been confirmed</h2>
+      <table id="confirmTable">
+        <tr>
+          <th class="headStyle">Personal information</th>
+        </tr>
+        <tbody>
+          <tr>
+            <th>Name:</th>
+            <th><%= order.name %></th>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <th><%= order.email %></th>
+          </tr>
+          <tr>
+            <th class="headStyle">Order Details</th>
+          </tr>
+          <tr>
+            <th>Flavor:</th>
+            <th><%= order.flavor %></th>
+          </tr>
+          <tr>
+            <th>Cone Type:</th>
+            <th><%= order.cone %></th>
+          </tr>
+          <tr>
+            <th>Toppings:</th>
+            <th><%= order.toppings %></th>
+          </tr>
+        </tbody>
+        <tr>
+          <th>Additional Comments:</th>
+          <th><%= order.comments %></th>
+        </tr>
+      </table>
+      <button>Print Order</button>
+      <button>Place Another Order</button>
+    </main>
+  </body>
+</html>

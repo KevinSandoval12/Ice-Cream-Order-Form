@@ -31,6 +31,7 @@ button {
   color: white;
   background-color: green;
   border-radius: 0.25rem;
+  border: none;
   padding: 0.5rem;
   margin-top: 0.5rem;
   width: 100%;
@@ -63,4 +64,23 @@ select {
 
 fieldset {
   border-radius: 0.5rem;
+}
+
+main {
+  border-radius: 0.5rem;
+  background-color: white;
+  width: 70%;
+  margin: 0 auto 1rem auto;
+  padding: 0 1rem 2rem 1rem;
+}
+
+.headStyle {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+
+th:first-child {
+  display: flex;
+  float: left;
 }

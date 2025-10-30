@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Order</title>
+    <link rel="icon" href="images/icecream.png" />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.js"></script>
+
+    <script src="//cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>ADMIN</h1>
+
+      <table id="order-table" class="display">
+        <thead>
+          <tr class="headStyle">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Toppings</th>
+            <th>Size</th>
+            <th>Comment</th>
+            <th>Date/Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Joe Shmo</td>
+            <td>jshmo@gmail.com</td>
+            <td>pepperoni, sausage</td>
+            <td>Medium</td>
+            <td>Extra Cheese</td>
+            <td>10/28/2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <a href="/">Place an Order</a>
+  </body>
+  <script defer>
+    let table = new DataTable("#order-table");
+  </script>
+</html>

@@ -9,14 +9,14 @@
   </head>
   <body>
     <div>
-      <form action="">
+      <form action="submit-order" method="post">
         <h1>Ice Cream Order Form</h1>
         <!-- Personal Info -->
         <fieldset id="info">
           <legend>Personal Information</legend>
-          <label for="name">Name:<input type="text" /></label>
+          <label for="name">Name:<input type="text" name="name" /></label>
           <br />
-          <label for="email">Email:<input type="text" /></label>
+          <label for="email">Email:<input type="text" name="email" /></label>
         </fieldset>
 
         <!-- Choose your flavor -->
@@ -90,7 +90,7 @@
           <br />
           <label for="comments" id="comments"
             >Additional Comments: <br />
-            <input type="text"
+            <input type="text" name="comments"
           /></label>
         </fieldset>
 

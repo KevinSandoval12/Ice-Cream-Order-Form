@@ -84,3 +84,8 @@ th:first-child {
   display: flex;
   float: left;
 }
+
+#rowBtn {
+  display: flex;
+  gap: 1rem;
+}

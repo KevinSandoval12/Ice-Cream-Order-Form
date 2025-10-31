@@ -41,7 +41,7 @@ app.post("/submit-order", (req, res) => {
     comments: req.body.comments,
   };
   //   res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
-  console.log("Server is running at http://localhost:${PORT}");
+  console.log(`Server is running at http://localhost:${PORT}`);
 
   orders.push(order);
 
@@ -53,5 +53,5 @@ app.post("/submit-order", (req, res) => {
 // start the server and make it listen on the port
 // specified above
 app.listen(PORT, () => {
-  console.log(`Sever is running at http://localhost:${PORT}`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
